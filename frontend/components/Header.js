@@ -5,6 +5,7 @@ import Menu from "./Menu.js";
 import { Config } from "../config.js";
 import stylesheet from '../src/styles/style.scss'
 
+
 class Header extends Component {
     constructor() {
         super();
@@ -25,6 +26,12 @@ class Header extends Component {
                         WordPress + React Starter Kit Frontend by Postlight
                     </title>
                 </Head>
+                <header>
+                    <Link href="/">
+                        <a><h1>WordPress Blog</h1></a>
+                    </Link>
+                    <Menu menu={this.props.mainNav}/>
+                </header>
             </div>
         );
     }

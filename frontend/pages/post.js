@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import fetch from "isomorphic-unfetch";
 import Error from "next/error";
 import PageWrapper from "../components/PageWrapper.js";
-import Menu from "../components/Menu.js";
 import { Config } from "../config.js";
 
 class Post extends Component {
@@ -18,10 +17,9 @@ class Post extends Component {
 
     render() {
         if (!this.props.post.title) return <Error statusCode={404} />;
-
+ 
         return (
-            <Layout>
-                <Menu menu={this.props.headerMenu} />
+            <Layout {...this.props}>
                 <h1>{this.props.post.title.rendered}</h1>
                 <div
                     dangerouslySetInnerHTML={{

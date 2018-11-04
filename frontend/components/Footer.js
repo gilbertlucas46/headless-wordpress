@@ -1,11 +1,13 @@
 import Link from "next/link";
+import Menu from "./Menu.js";
 
 const hrStyle = {
     marginTop: 75
 };
 
-const Footer = () => (
+const Footer = (props) => (
     <div>
+    <Menu menu={props.footerNav}/>
         <hr style={hrStyle} />
         <p>
             ❤️{" "}
