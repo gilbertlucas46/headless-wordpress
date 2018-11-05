@@ -4,6 +4,7 @@ import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
 import PageWrapper from '../components/PageWrapper.js';
 import Menu from '../components/Menu.js';
+import Slider from '../components/Slider.js';
 import { Config } from '../config.js';
 
 const headerImageStyle = {
@@ -39,11 +40,7 @@ class Index extends Component {
     });
     return (
       <Layout {...this.props}>
-        <img
-          src="/static/images/wordpress-plus-react-header.png"
-          width="815"
-          style={headerImageStyle}
-        />
+        <Slider/>
         <h1>{this.props.page.title.rendered}</h1>
         <div
           dangerouslySetInnerHTML={{
