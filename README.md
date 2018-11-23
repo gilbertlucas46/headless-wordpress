@@ -4,7 +4,6 @@ Headless WordPress + React Starter Kit is an automated toolset that will spin up
 1.  A WordPress backend that serves its data via the [WP REST API](https://developer.wordpress.org/rest-api/) and [GraphQL](http://graphql.org/) (**new!**).
 2.  A server-side rendered React frontend using [Next.js](https://github.com/zeit/next.js/).
 
-You can read all about it in [this handy introduction](https://trackchanges.postlight.com/introducing-postlights-wordpress-react-starter-kit-a61e2633c48c).
 
 **What's inside:**
 
