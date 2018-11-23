@@ -1,6 +1,5 @@
 ![WordPress + React Starter Kit](frontend/static/images/wordpress-plus-react-header.png)
-
-Postlight's Headless WordPress + React Starter Kit is an automated toolset that will spin up two things:
+Headless WordPress + React Starter Kit is an automated toolset that will spin up two things:
 
 1.  A WordPress backend that serves its data via the [WP REST API](https://developer.wordpress.org/rest-api/) and [GraphQL](http://graphql.org/) (**new!**).
 2.  A server-side rendered React frontend using [Next.js](https://github.com/zeit/next.js/).
@@ -104,7 +103,3 @@ If you receive this error, it likely means another version of MySQL, not the ver
 If you have deployed your WordPress install and are having CORS issues be sure to update `/wordpress/wp-content/themes/postlight-headless-wp/inc/frontend-origin.php` with your frontend origin URL.
 
 See anything else you'd like to add here? Please send a pull request!
-
----
-
-Made with ❤️ by [Postlight](https://postlight.com). Happy coding!
